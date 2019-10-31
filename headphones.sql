@@ -27,20 +27,20 @@ DROP TABLE address CASCADE CONSTRAINTS;
 
 insert into address  values (1, '498 Saint Paul Place', 'Riverside', 'CA', '92519');
 insert into address  values (2, '2 Nevada Pass', 'Columbia', 'SC', '29208');
-insert into address  values (3, '0 Ruskin Alley', 'Winston Salem', 'NC', '27157');
+insert into address  values (3, '0 Ruskin Alley'), 'Winston Salem', 'NC', '27157');
 insert into address  values (4, '2186 Gateway Circle', 'Escondido', 'CA', '92030');
-insert into address  values (5, '490 Mesta Parkway', 'Alexandria', 'VA', '22333');
+insert into address  values (5, '490 Mesta Parkway'), 'Alexandria', 'VA', '22333');
 insert into address  values (6, '7380 Holy Cross Avenue', 'Lansing', 'MI', '48919');
 insert into address  values (7, '42 Waywood Pass', 'Spring', 'TX', '77388');
-insert into address  values (8, '5120 Doe Crossing Alley', 'Fort Wayne', 'IN', '46862');
+insert into address  values (8, '5120 Doe Crossing Alley'), 'Fort Wayne', 'IN', '46862');
 insert into address  values (9, '806 International Place', 'Marietta', 'GA', '30061');
 insert into address  values (10, '66278 Johnson Center', 'Newport News', 'VA', '23612');
 insert into address  values (11, '578 Debra Crossing', 'Charleston', 'WV', '25362');
 insert into address  values (12, '966 Sachs Court', 'Provo', 'UT', '84605');
 insert into address  values (13, '52634 Express Circle', 'Amarillo', 'TX', '79188');
 insert into address  values (14, '522 Ronald Regan Place', 'Richmond', 'VA', '23289');
-insert into address  values (15, '721 Nova Plaza', 'Louisville', 'KY', '40225');
-insert into address  values (16, '39 Bunker Hill Alley', 'Milwaukee', 'WI', '53285');
+insert into address  values (15, '721 Nova Plaza', 'Louisville', 'Ky'), '40225');
+insert into address  values (16, '39 Bunker Hill Alley'), 'Milwaukee', 'WI', '53285');
 insert into address  values (17, '95 Ohio Avenue', 'Watertown', 'MA', '02472');
 insert into address  values (18, '44 Ludington Drive', 'New Orleans', 'LA', '70116');
 insert into address  values (19, '0488 Bartillon Hill', 'Duluth', 'GA', '30195');
@@ -51,8 +51,8 @@ insert into address  values (23, '179 Anderson Drive', 'Salem', 'OR', '97312');
 insert into address  values (24, '945 Summer Ridge Avenue', 'Marietta', 'GA', '30066');
 insert into address  values (25, '747 Farragut Hill', 'Bonita Springs', 'FL', '34135');
 insert into address  values (26, '42717 Novick Place', 'Naples', 'FL', '34102');
-insert into address  values (27, '53 Commercial Way', 'Columbia', 'SC', '29215');
-insert into address  values (28, '84 Oxford Alley', 'San Antonio', 'TX', '78220');
+insert into address  values (27, '53 Commercial Way'), 'Columbia', 'SC', '29215');
+insert into address  values (28, '84 Oxford Alley'), 'San Antonio', 'TX', '78220');
 insert into address  values (29, '9214 Glacier Hill Hill', 'Daytona Beach', 'FL', '32118');
 insert into address  values (30, '8 Alpine Pass', 'Fresno', 'CA', '93715');
 
@@ -71,7 +71,7 @@ CREATE TABLE BRANCHES
 insert into branches   values (1, 'Dabfeed', '749-383-7946');
 insert into branches   values (2, 'LiveZ', '219-929-6452');
 insert into branches   values (3, 'Fivechat', '711-245-7490');
-insert into branches   values (4, 'Tazzy', '557-192-1674');
+insert into branches   values (4, 'Tazzy'), '557-192-1674');
 insert into branches   values (5, 'Twinder', '271-726-6513');
 insert into branches   values (6, 'Mynte', '734-731-6806');
 insert into branches   values (7, 'Browsezoom', '426-767-6472');
@@ -79,7 +79,7 @@ insert into branches   values (8, 'Browsebug', '243-215-3458');
 insert into branches   values (9, 'Divanoodle', '687-671-4614');
 insert into branches   values (10, 'Mybuzz', '699-406-5897');
 insert into branches   values (11, 'Dabtype', '924-934-1693');
-insert into branches   values (12, 'Wordify', '633-149-7966');
+insert into branches   values (12, 'Wordify'), '633-149-7966');
 insert into branches   values (13, 'Jabbercube', '346-534-3607');
 insert into branches   values (14, 'Chatterpoint', '425-232-1375');
 insert into branches   values (15, 'Kimia', '640-300-7434');
@@ -163,24 +163,24 @@ insert into headphones   values (3, 'Von-Parisian', 'G', 'Odocoileus hemionus', 
 insert into headphones   values (4, 'Blanda, Roberts and Bergstrom', 'Tacoma', 'Aonyx cinerea', 4, 5, 50, 23);
 insert into headphones   values (5, 'Ward LLC', '300M', 'Hydrochoerus hydrochaeris', 6, 5, 49, 25);
 insert into headphones   values (6, 'Reynolds-Graham', 'Mustang', 'Boa constrictor mexicana', 5, 7, 49, 27);
-insert into headphones   values (7, 'Abshire-Dooley', 'Envoy XL', 'Hydrochoerus hydrochaeris', 6, 5, 50, 25);
+insert into headphones   values (7, 'Abshire-Dooley'), 'Envoy XL', 'Hydrochoerus hydrochaeris', 6, 5, 50, 25);
 insert into headphones   values (8, 'Braun, McKenzie and Mueller', 'Savana 3500', 'Ciconia ciconia', 6, 6, 49, 26);
 insert into headphones   values (9, 'Fay-Wuckert', 'Skyhawk', 'Naja haje', 5, 3, 51, 26);
 insert into headphones   values (10, 'Cartwright Inc', '3500', 'Dasyprocta leporina', 6, 5, 51, 25);
 insert into headphones   values (11, 'Rodriguez, Wisozk and Spinka', 'Continental Super', 'Chlamydosaurus kingii', 5, 7, 51, 25);
 insert into headphones   values (12, 'Ritchie-Bosco', 'Express 3500', 'Felis rufus', 6, 5, 48, 23);
-insert into headphones   values (13, 'Baumbach, Kilback and Collins', 'Town  Country', 'Cervus duvauceli', 5, 5, 52, 25);
+insert into headphones   values (13, 'Baumbach, Kilback and Collins', 'Town  Country'), 'Cervus duvauceli', 5, 5, 52, 25);
 insert into headphones   values (14, 'Murphy-Simonis', 'Parisienne', 'Eolophus roseicapillus', 4, 5, 49, 25);
-insert into headphones   values (15, 'Beatty-Flatley', 'del Sol', 'Felis pardalis', 4, 6, 51, 26);
+insert into headphones   values (15, 'Beatty-Flatley'), 'del Sol', 'Felis pardalis', 4, 6, 51, 26);
 insert into headphones   values (16, 'Hodkiewicz-MacGyver', 'Continental GT', 'Amblyrhynchus cristatus', 3, 4, 50, 26);
 insert into headphones   values (17, 'Balistreri Inc', 'Vantage', 'Plegadis falcinellus', 4, 6, 48, 24);
 insert into headphones   values (18, 'Howe and Sons', 'Civic', 'Sciurus niger', 6, 7, 49, 26);
-insert into headphones   values (19, 'Carroll Group', 'Rocky', 'Cyrtodactylus louisiadensis', 3, 6, 50, 23);
+insert into headphones   values (19, 'Carroll Group', 'Rocky'), 'Cyrtodactylus louisiadensis', 3, 6, 50, 23);
 insert into headphones   values (20, 'Stehr Inc', 'Parisienne', 'Alcelaphus buselaphus caama', 6, 6, 52, 26);
 insert into headphones   values (21, 'Berge, Nienow and Cronin', '88', 'Pseudalopex gymnocercus', 5, 5, 49, 25);
 insert into headphones   values (22, 'Graham, Bernhard and Doyle', 'Yukon', 'Pavo cristatus', 5, 3, 51, 25);
 insert into headphones   values (23, 'Wyman, Nicolas and DuBuque', 'MX-5', 'Spilogale gracilis', 4, 4, 49, 26);
-insert into headphones   values (24, 'Corkery, Glover and Gaylord', 'Odyssey', 'Semnopithecus entellus', 4, 4, 50, 26);
+insert into headphones   values (24, 'Corkery, Glover and Gaylord', 'Odyssey'), 'Semnopithecus entellus', 4, 4, 50, 26);
 insert into headphones   values (25, 'Kautzer, Nolan and Paucek', 'Tiburon', 'Pelecanus conspicillatus', 3, 6, 50, 25);
 insert into headphones   values (26, 'Breitenberg-Gutkowski', 'Crown Victoria', 'Trichoglossus chlorolepidotus', 5, 6, 51, 26);
 insert into headphones   values (27, 'Luettgen-Predovic', 'Integra', 'Spermophilus lateralis', 7, 5, 49, 25);
@@ -372,47 +372,47 @@ CREATE TABLE customers (customer_id NUMBER(30) NOT NULL,
             CONSTRAINT customer_pk_c_id PRIMARY KEY (customer_id),
             CONSTRAINT customer_fk_b_id FOREIGN KEY (branches_id) REFERENCES branches(br_id));
 
-insert into customers   values (1, 'Creasy', 'Josefa', '635-806-9883', 13);
+insert into customers   values (1, 'Creasy'), 'Josefa', '635-806-9883', 13);
 insert into customers   values (2, 'Langstone', 'Ashia', '863-993-5967', 15);
 insert into customers   values (3, 'Gorton', 'Raye', '232-108-3218', 14);
-insert into customers   values (4, 'Broadberry', 'Reube', '249-601-0277', 15);
+insert into customers   values (4, 'Broadberry'), 'Reube', '249-601-0277', 15);
 insert into customers   values (5, 'Eberdt', 'Rikki', '201-850-2793', 15);
 insert into customers   values (6, 'Ducket', 'Rafaelita', '993-983-4158', 18);
 insert into customers   values (7, 'Bomfield', 'Harlen', '193-533-1922', 17);
-insert into customers   values (8, 'Hannabuss', 'Garvey', '999-838-4511', 15);
+insert into customers   values (8, 'Hannabuss', 'Garvey'), '999-838-4511', 15);
 insert into customers   values (9, 'Cadell', 'Shaine', '845-121-4949', 14);
 insert into customers   values (10, 'Santore', 'Kerrill', '862-443-1194', 16);
 insert into customers   values (11, 'Scallan', 'Thedrick', '868-729-1668', 14);
-insert into customers   values (12, 'Lissandri', 'Nanny', '840-872-3580', 15);
+insert into customers   values (12, 'Lissandri', 'Nanny'), '840-872-3580', 15);
 insert into customers   values (13, 'Cosslett', 'Ortensia', '189-250-8591', 13);
-insert into customers   values (14, 'Gooly', 'Mile', '487-427-8637', 15);
+insert into customers   values (14, 'Gooly'), 'Mile', '487-427-8637', 15);
 insert into customers   values (15, 'Portam', 'Izabel', '153-770-9092', 16);
-insert into customers   values (16, 'Leadley', 'Domeniga', '682-521-1738', 15);
+insert into customers   values (16, 'Leadley'), 'Domeniga', '682-521-1738', 15);
 insert into customers   values (17, 'Profit', 'Robers', '476-634-9855', 15);
 insert into customers   values (18, 'Chadband', 'Ali', '615-912-7120', 15);
 insert into customers   values (19, 'Kernermann', 'Tremayne', '675-507-2382', 15);
-insert into customers   values (20, 'Murtell', 'Baxy', '921-378-8099', 14);
-insert into customers   values (21, 'Booth', 'Glory', '303-593-5781', 16);
+insert into customers   values (20, 'Murtell', 'Baxy'), '921-378-8099', 14);
+insert into customers   values (21, 'Booth', 'Glory'), '303-593-5781', 16);
 insert into customers   values (22, 'Stanwix', 'Oswald', '483-614-6791', 16);
-insert into customers   values (23, 'McTerrelly', 'Carolin', '674-802-9293', 15);
+insert into customers   values (23, 'McTerrelly'), 'Carolin', '674-802-9293', 15);
 insert into customers   values (24, 'Greeveson', 'Lethia', '579-675-8630', 16);
-insert into customers   values (25, 'Shipley', 'Jordan', '216-506-3702', 13);
+insert into customers   values (25, 'Shipley'), 'Jordan', '216-506-3702', 13);
 insert into customers   values (26, 'Farnham', 'Eden', '518-115-1214', 15);
 insert into customers   values (27, 'Hourihan', 'Kameko', '536-111-2881', 15);
 insert into customers   values (28, 'Skews', 'Andriette', '961-109-7054', 16);
-insert into customers   values (29, 'Dolohunty', 'Iolanthe', '609-863-3774', 15);
+insert into customers   values (29, 'Dolohunty'), 'Iolanthe', '609-863-3774', 15);
 insert into customers   values (30, 'Vellacott', 'Pace', '284-256-0718', 15);
-insert into customers   values (31, 'Narraway', 'Lynea', '744-895-4298', 15);
-insert into customers   values (32, 'Rickarsey', 'Fleur', '218-831-6107', 14);
-insert into customers   values (33, 'Menego', 'Blinny', '438-563-6829', 16);
+insert into customers   values (31, 'Narraway'), 'Lynea', '744-895-4298', 15);
+insert into customers   values (32, 'Rickarsey'), 'Fleur', '218-831-6107', 14);
+insert into customers   values (33, 'Menego', 'Blinny'), '438-563-6829', 16);
 insert into customers   values (34, 'Dilworth', 'Melita', '314-446-0493', 15);
 insert into customers   values (35, 'Harbisher', 'Redford', '384-871-6978', 14);
 insert into customers   values (36, 'Keniwell', 'Katleen', '264-756-8306', 14);
 insert into customers   values (37, 'Dickson', 'Putnam', '198-165-2379', 13);
 insert into customers   values (38, 'Ffrench', 'Teador', '641-666-5762', 16);
-insert into customers   values (39, 'Balaisot', 'Whitney', '224-280-5508', 15);
+insert into customers   values (39, 'Balaisot', 'Whitney'), '224-280-5508', 15);
 insert into customers   values (40, 'Kingscote', 'Drugi', '737-302-1365', 16);
-insert into customers   values (41, 'Feighney', 'Marion', '864-323-4672', 15);
+insert into customers   values (41, 'Feighney'), 'Marion', '864-323-4672', 15);
 insert into customers   values (42, 'Rosenbarg', 'Goddard', '428-883-3123', 14);
 insert into customers   values (43, 'Goodricke', 'Marianne', '811-862-4225', 16);
 insert into customers   values (44, 'Matteris', 'Alvin', '401-944-9795', 16);
@@ -505,31 +505,31 @@ insert into employees   values (2, 'Van der Kruijs', 'Cherilyn', 16, 15);
 insert into employees   values (3, 'Tombling', 'Betta', 16, 15);
 insert into employees   values (4, 'Coopman', 'Kevan', 17, 14);
 insert into employees   values (5, 'Gavaran', 'Christal', 15, 15);
-insert into employees   values (6, 'Buy', 'Janina', 16, 14);
-insert into employees   values (7, 'Fulloway', 'Karena', 16, 16);
+insert into employees   values (6, 'Buy'), 'Janina', 16, 14);
+insert into employees   values (7, 'Fulloway'), 'Karena', 16, 16);
 insert into employees   values (8, 'Kupisz', 'Zuzana', 15, 16);
 insert into employees   values (9, 'Guilayn', 'Alick', 17, 14);
 insert into employees   values (10, 'Braffington', 'Sergio', 16, 17);
 insert into employees   values (11, 'St. Paul', 'Karena', 15, 15);
 insert into employees   values (12, 'Richards', 'Alie', 17, 16);
 insert into employees   values (13, 'Stapells', 'Rosemaria', 14, 14);
-insert into employees   values (14, 'Emburey', 'Lyn', 14, 15);
+insert into employees   values (14, 'Emburey'), 'Lyn', 14, 15);
 insert into employees   values (15, 'Waszczyk', 'Nevil', 17, 14);
 insert into employees   values (16, 'Scholtis', 'Allina', 16, 16);
 insert into employees   values (17, 'Wigfield', 'Vitoria', 16, 15);
 insert into employees   values (18, 'McKinnell', 'Carie', 15, 13);
 insert into employees   values (19, 'Ponton', 'Gard', 15, 14);
-insert into employees   values (20, 'Tungay', 'Latrena', 15, 14);
+insert into employees   values (20, 'Tungay'), 'Latrena', 15, 14);
 insert into employees   values (21, 'Iddiens', 'Les', 16, 15);
 insert into employees   values (22, 'Couvert', 'Nellie', 16, 14);
-insert into employees   values (23, 'Ollet', 'D''arcy', 15, 15);
+insert into employees   values (23, 'Ollet', 'D''arcy'), 15, 15);
 insert into employees   values (24, 'Farnworth', 'Lebbie', 14, 15);
 insert into employees   values (25, 'Been', 'Rebbecca', 16, 15);
 insert into employees   values (26, 'Gull', 'Silvanus', 16, 15);
 insert into employees   values (27, 'Segar', 'Dominique', 16, 15);
 insert into employees   values (28, 'Lehon', 'Zackariah', 14, 14);
 insert into employees   values (29, 'Spaice', 'Jonas', 15, 15);
-insert into employees   values (30, 'Fawlks', 'Corby', 17, 13);
+insert into employees   values (30, 'Fawlks', 'Corby'), 17, 13);
 
 
 CREATE TABLE employee_address(e_address_id NUMBER(30) NOT NULL,
@@ -604,7 +604,7 @@ insert into order_placed   values (13, '29/05/2019', '11/02/2019', 'Kia', 16.96,
 insert into order_placed   values (14, '23/02/2019', '19/01/2019', 'Ford', 13.9, 28.68, 26, 15, 16);
 insert into order_placed   values (15, '16/11/2018', '22/02/2019', 'Saturn', 15.11, 30.42, 25, 14, 13);
 insert into order_placed   values (16, '16/04/2019', '01/10/2018', 'Mazda', 15.94, 30.71, 25, 14, 15);
-insert into order_placed   values (17, '04/10/2018', '22/08/2019', 'Shelby', 15.84, 28.91, 24, 15, 14);
+insert into order_placed   values (17, '04/10/2018', '22/08/2019', 'Shelby'), 15.84, 28.91, 24, 15, 14);
 insert into order_placed   values (18, '15/11/2018', '28/05/2019', 'Hyundai', 15.47, 30.21, 24, 15, 16);
 insert into order_placed   values (19, '06/11/2018', '02/09/2019', 'Toyota', 15.07, 30.28, 24, 14, 16);
 insert into order_placed   values (20, '07/08/2019', '16/11/2018', 'Pontiac', 15.05, 31.28, 25, 13, 17);
@@ -616,7 +616,7 @@ insert into order_placed   values (25, '13/09/2019', '26/06/2019', 'Dodge', 12.8
 insert into order_placed   values (26, '29/09/2019', '02/07/2019', 'Cadillac', 15.59, 28.99, 24, 14, 16);
 insert into order_placed   values (27, '10/03/2019', '29/08/2019', 'Buick', 15.13, 28.0, 26, 16, 13);
 insert into order_placed   values (28, '22/06/2019', '13/08/2019', 'Mercedes-Benz', 15.9, 30.89, 27, 14, 14);
-insert into order_placed   values (29, '05/01/2019', '18/08/2019', 'Mercury', 14.62, 29.9, 26, 14, 16);
+insert into order_placed   values (29, '05/01/2019', '18/08/2019', 'Mercury'), 14.62, 29.9, 26, 14, 16);
 insert into order_placed   values (30, '07/04/2019', '16/08/2019', 'Ford', 17.42, 28.94, 23, 13, 16);
 insert into order_placed   values (31, '23/04/2019', '09/12/2018', 'Ford', 15.05, 29.74, 24, 14, 16);
 insert into order_placed   values (32, '17/06/2019', '10/09/2019', 'Toyota', 14.47, 28.64, 26, 14, 16);
@@ -696,7 +696,7 @@ insert into order_placed   values (105, '25/03/2019', '11/11/2018', 'Hyundai', 1
 insert into order_placed   values (106, '26/04/2019', '01/02/2019', 'Infiniti', 14.19, 29.35, 26, 15, 14);
 insert into order_placed   values (107, '23/09/2019', '09/10/2018', 'Ford', 14.59, 29.29, 25, 14, 15);
 insert into order_placed   values (108, '01/10/2018', '13/04/2019', 'Audi', 15.16, 29.9, 25, 15, 16);
-insert into order_placed   values (109, '23/04/2019', '14/12/2018', 'Mercury', 13.61, 29.94, 24, 17, 15);
+insert into order_placed   values (109, '23/04/2019', '14/12/2018', 'Mercury'), 13.61, 29.94, 24, 17, 15);
 insert into order_placed   values (110, '12/04/2019', '07/04/2019', 'Volkswagen', 13.73, 29.52, 25, 13, 17);
 insert into order_placed   values (111, '31/12/2018', '04/02/2019', 'Honda', 13.58, 31.31, 25, 15, 16);
 insert into order_placed   values (112, '15/02/2019', '26/09/2019', 'Chrysler', 14.64, 30.79, 24, 16, 16);
@@ -704,7 +704,7 @@ insert into order_placed   values (113, '09/03/2019', '08/07/2019', 'GMC', 16.32
 insert into order_placed   values (114, '16/02/2019', '04/04/2019', 'GMC', 14.67, 31.25, 24, 15, 15);
 insert into order_placed   values (115, '20/04/2019', '07/01/2019', 'Hyundai', 14.16, 29.55, 25, 14, 16);
 insert into order_placed   values (116, '01/04/2019', '27/10/2018', 'Chevrolet', 15.87, 29.48, 26, 15, 17);
-insert into order_placed   values (117, '07/07/2019', '24/01/2019', 'Bentley', 16.49, 29.25, 25, 16, 16);
+insert into order_placed   values (117, '07/07/2019', '24/01/2019', 'Bentley'), 16.49, 29.25, 25, 16, 16);
 insert into order_placed   values (118, '29/07/2019', '23/06/2019', 'Pontiac', 15.06, 30.07, 26, 16, 14);
 insert into order_placed   values (119, '28/07/2019', '05/08/2019', 'Maybach', 14.68, 31.1, 26, 17, 13);
 insert into order_placed   values (120, '11/12/2018', '26/03/2019', 'Jeep', 13.98, 29.51, 24, 15, 15);
@@ -720,7 +720,7 @@ insert into order_placed   values (129, '08/04/2019', '07/09/2019', 'Pontiac', 1
 insert into order_placed   values (130, '12/06/2019', '14/10/2018', 'Infiniti', 15.0, 30.47, 25, 13, 15);
 insert into order_placed   values (131, '06/01/2019', '08/11/2018', 'Chevrolet', 16.92, 28.9, 24, 14, 15);
 insert into order_placed   values (132, '06/10/2018', '04/04/2019', 'Chevrolet', 15.12, 29.44, 26, 13, 15);
-insert into order_placed   values (133, '01/12/2018', '10/01/2019', 'Mercury', 15.13, 30.61, 24, 15, 15);
+insert into order_placed   values (133, '01/12/2018', '10/01/2019', 'Mercury'), 15.13, 30.61, 24, 15, 15);
 insert into order_placed   values (134, '23/05/2019', '12/02/2019', 'Suzuki', 14.01, 29.01, 25, 16, 16);
 insert into order_placed   values (135, '18/06/2019', '22/11/2018', 'Acura', 15.42, 29.65, 23, 14, 14);
 insert into order_placed   values (136, '07/02/2019', '25/02/2019', 'Ford', 15.94, 29.67, 23, 15, 14);
@@ -770,10 +770,10 @@ insert into order_placed   values (179, '28/12/2018', '13/09/2019', 'Chevrolet',
 insert into order_placed   values (180, '10/10/2018', '17/08/2019', 'Hummer', 13.74, 31.01, 24, 15, 15);
 insert into order_placed   values (181, '07/09/2019', '28/07/2019', 'Toyota', 15.29, 28.99, 25, 16, 14);
 insert into order_placed   values (182, '08/08/2019', '12/07/2019', 'Chevrolet', 13.67, 32.05, 26, 15, 15);
-insert into order_placed   values (183, '07/05/2019', '18/05/2019', 'Mercury', 14.85, 31.27, 26, 15, 15);
+insert into order_placed   values (183, '07/05/2019', '18/05/2019', 'Mercury'), 14.85, 31.27, 26, 15, 15);
 insert into order_placed   values (184, '16/04/2019', '04/04/2019', 'Mazda', 14.73, 28.89, 26, 16, 15);
 insert into order_placed   values (185, '07/06/2019', '11/01/2019', 'Mazda', 14.75, 30.09, 25, 15, 17);
-insert into order_placed   values (186, '27/07/2019', '21/04/2019', 'Mercury', 15.47, 28.93, 26, 16, 15);
+insert into order_placed   values (186, '27/07/2019', '21/04/2019', 'Mercury'), 15.47, 28.93, 26, 16, 15);
 insert into order_placed   values (187, '01/10/2018', '25/05/2019', 'Dodge', 14.81, 28.02, 26, 14, 15);
 insert into order_placed   values (188, '19/10/2018', '25/01/2019', 'BMW', 15.64, 28.17, 23, 15, 14);
 insert into order_placed   values (189, '21/09/2019', '29/10/2018', 'Oldsmobile', 14.7, 29.04, 25, 17, 15);
@@ -1306,43 +1306,90 @@ create table prices (
 	CONSTRAINT prices_fk_h_id FOREIGN KEY (headphones_id) REFERENCES HEADPHONES(HEADPHONES_ID));
 
 Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(2, '26-50', 19, '01/02/2001', '29/12/2005', 1);
-Insert into prices values(3, '50<', 20, '01/03/2001', '29/12/2005', 1);
-Insert into prices values(4, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
-Insert into prices values(1, '1-25', 20, '01/01/2001', '29/12/2005', 1);
+Insert into prices values(2, '26-50', 15, '01/02/2001', '29/12/2005', 1);
+Insert into prices values(3, '50<', 10, '01/03/2001', '29/12/2005', 1);
+Insert into prices values(4, '1-25', 18, '01/04/2001', '29/12/2005', 2);
+Insert into prices values(5, '26-50', 15, '01/05/2001', '29/12/2005', 2);
+Insert into prices values(6, '50<', 13, '01/06/2001', '29/12/2005', 2);
+Insert into prices values(7, '1-25', 25, '01/07/2001', '29/12/2005', 3);
+Insert into prices values(8, '26-50', 20, '01/08/2001', '29/12/2005', 3);
+Insert into prices values(9, '50<', 15, '01/09/2001', '29/12/2005', 3);
+Insert into prices values(10, '1-25', 23, '01/10/2001', '29/12/2005', 4);
+Insert into prices values(11, '26-50', 17, '01/11/2001', '29/12/2005', 4);
+Insert into prices values(12, '50<', 12, '01/12/2001', '29/12/2005', 4);
+Insert into prices values(13, '1-25', 20, '01/01/2001', '29/12/2005', 5);
+Insert into prices values(14, '26-50', 16, '01/02/2001', '29/12/2005', 5);
+Insert into prices values(15, '50<', 11, '01/03/2001', '29/12/2005', 5);
+Insert into prices values(16, '1-25', 20, '01/04/2001', '29/12/2005', 6);
+Insert into prices values(17, '26-50', 16, '01/05/2001', '29/12/2005', 6);
+Insert into prices values(18, '50<', 10, '01/06/2001', '29/12/2005', 7);
+Insert into prices values(19, '1-25', 20, '01/07/2001', '29/12/2005', 8);
+Insert into prices values(20, '26-50', 19, '01/08/2001', '29/12/2005', 8);
 
 
-create table comission (
+create table commission (
         commission_id Number(30),
         commission_amt Number(10,2),
         commission_month Date,
         employees_id Number(30),
         CONSTRAINT commission_pk_c_id PRIMARY KEY (commission_id),
         CONSTRAINT commision_fk_e_id FOREIGN KEY (employees_id) REFERENCES employees(employees_id));
-        
-        
-alter table employee_pos add start_date Date;
 
 
-alter table employee_pos add end_date Date;
+Insert into commission values (1, 500.23, to_date('12/2004', 'mm/yyyy'), 1);
+Insert into commission values (2, 250.23, to_date('12/2004', 'mm/yyyy'), 2);
+Insert into commission values (3, 511.23, to_date('12/2004', 'mm/yyyy'), 3);
+Insert into commission values (4, 10.23, to_date('12/2004', 'mm/yyyy'), 4);
+Insert into commission values (5, 110.23, to_date('12/2004', 'mm/yyyy'), 5);
+Insert into commission values (6, 1500.23, to_date('12/2004', 'mm/yyyy'), 6);
+Insert into commission values (7, 2500.23, to_date('12/2004', 'mm/yyyy'), 7);
+Insert into commission values (8, 101.23, to_date('12/2004', 'mm/yyyy'), 8);
+Insert into commission values (9, 500.23, to_date('12/2004', 'mm/yyyy'), 9);
+Insert into commission values (10, 50.23, to_date('12/2004', 'mm/yyyy'), 10);
+Insert into commission values (11, 50.23, to_date('12/2004', 'mm/yyyy'), 11);
+Insert into commission values (12, 502.23, to_date('12/2004', 'mm/yyyy'), 12);
+Insert into commission values (13, 20.23, to_date('12/2004', 'mm/yyyy'), 13);
+Insert into commission values (14, 90.23, to_date('12/2004', 'mm/yyyy'), 14);
+Insert into commission values (15, 70.23, to_date('12/2004', 'mm/yyyy'), 15);
+Insert into commission values (16, 800.23, to_date('12/2004', 'mm/yyyy'), 16);
+Insert into commission values (17, 500.23, to_date('12/2004', 'mm/yyyy'), 17);
+Insert into commission values (18, 1100.23, to_date('12/2004', 'mm/yyyy'), 18);
+Insert into commission values (19, 789.23, to_date('12/2004', 'mm/yyyy'), 19);
+Insert into commission values (20, 56.23, to_date('12/2004', 'mm/yyyy'), 20);
+Insert into commission values (21, 46.23, to_date('12/2004', 'mm/yyyy'), 21);
+Insert into commission values (22, 58.23, to_date('12/2004', 'mm/yyyy'), 22);
+Insert into commission values (23, 80.23, to_date('12/2004', 'mm/yyyy'), 23);
+Insert into commission values (24, 40.23, to_date('12/2004', 'mm/yyyy'), 24);
+Insert into commission values (25, 280.23, to_date('12/2004', 'mm/yyyy'), 25);
+        
+		
+create table emp_pos_duration (emp_pos_duration_id Number(30),
+				employee_p_id Number(30),
+				employees_id Number(30),
+				start_date Date,
+				end_date Date,
+				Constraint employee_pos_pk_e_p_id PRIMARY KEY (emp_pos_duration_id),
+				CONSTRAINT employee_fk_e_id FOREIGN KEY (employees_id) 
+						REFERENCES employees(employees_id),
+				CONSTRAINT employee_pos_d_fk_e_id FOREIGN KEY (employee_p_id) 
+						REFERENCES employee_pos(employee_p_id));
+						
+alter table employees drop column employee_p_id;
+
+
 
 alter table address add check (state IN  ('AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI',
-                                            'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD', 'ME', 'MI',
+                                            'IA', 'ID', 'IL', 'IN', 'KS', 'Ky'), 'LA', 'MA', 'MD', 'ME', 'MI',
                                             'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM', 'NV',
-                                            'NY', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT',
+                                            'Ny'), 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT',
                                             'VA', 'VT', 'WA', 'WI', 'WV', 'WY'));
+											
+create table regions (regions_id Number(30),
+					region_name Varchar2(50),
+					Constraint regions_pk_r_id PRIMARY KEY (regions_id));
+					
+alter table address add regions_id NUMBER(30);
+alter table address add constraint address_fk_r_id FOREIGN KET (REGIONS_ID)
+					REFERENCES regions(regions_id);
+					
+				
