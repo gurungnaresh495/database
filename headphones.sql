@@ -1,3 +1,4 @@
+--drop tables if created already
 DROP TABLE emp_salary CASCADE CONSTRAINTS;
 DROP TABLE return_prod CASCADE CONSTRAINTS;
 DROP TABLE headphones_brand CASCADE CONSTRAINTS;
@@ -16,6 +17,7 @@ DROP TABLE employee_pos CASCADE CONSTRAINTS;
 DROP TABLE branches CASCADE CONSTRAINTS;    
 DROP TABLE address CASCADE CONSTRAINTS;
 
+--Create address table
   CREATE TABLE ADDRESS
    ("ADDRESS_ID" NUMBER(30,0) NOT NULL, 
 	"STREET" VARCHAR2(80 BYTE), 
@@ -25,6 +27,7 @@ DROP TABLE address CASCADE CONSTRAINTS;
     Constraint address_pk_a_id Primary Key (address_id)
    );
 
+--Inserting values in address
 insert into address  values (1, '498 Saint Paul Place', 'Riverside', 'CA', '92519');
 insert into address  values (2, '2 Nevada Pass', 'Columbia', 'SC', '29208');
 insert into address  values (3, '0 Ruskin Alley'), 'Winston Salem', 'NC', '27157');
@@ -469,26 +472,15 @@ CREATE TABLE employee_pos (employee_p_id NUMBER(30)NOT NULL,
             pos_name VARCHAR2(150),
             CONSTRAINT employee_pos_pk_e_p_p_id PRIMARY KEY (employee_p_id));
             
-insert into employee_pos   values (1, 'benchmark');
-insert into employee_pos   values (2, 'matrix');
-insert into employee_pos   values (3, 'help-desk');
-insert into employee_pos   values (4, 'definition');
-insert into employee_pos   values (5, 'Multi-lateral');
-insert into employee_pos   values (6, 'Decentralized');
-insert into employee_pos   values (7, 'solution-oriented');
-insert into employee_pos   values (8, 'non-volatile');
-insert into employee_pos   values (9, 'success');
-insert into employee_pos   values (10, 'archive');
-insert into employee_pos   values (11, 'clear-thinking');
-insert into employee_pos   values (12, 'Focused');
-insert into employee_pos   values (13, 'process improvement');
-insert into employee_pos   values (14, 'radical');
-insert into employee_pos   values (15, 'responsive');
-insert into employee_pos   values (16, 'open architecture');
-insert into employee_pos   values (17, 'system-worthy');
-insert into employee_pos   values (18, 'Synchronised');
-insert into employee_pos   values (19, 'scalable');
-insert into employee_pos   values (20, 'Ameliorated');
+insert into employee_pos   values (1, 'manager');
+insert into employee_pos   values (2, 'sales');
+insert into employee_pos   values (3, 'sales manager');
+insert into employee_pos   values (4, 'administrative');
+insert into employee_pos   values (5, 'maintenance');
+insert into employee_pos   values (6, 'customer_service');
+insert into employee_pos   values (7, 'marketing');
+insert into employee_pos   values (8, 'finance');
+
 
 
 CREATE TABLE employees (employees_id NUMBER(30) NOT NULL,
@@ -1389,7 +1381,16 @@ create table regions (regions_id Number(30),
 					Constraint regions_pk_r_id PRIMARY KEY (regions_id));
 					
 alter table address add regions_id NUMBER(30);
-alter table address add constraint address_fk_r_id FOREIGN KET (REGIONS_ID)
+alter table address add constraint address_fk_r_id FOREIGN KEy (REGIONS_ID)
 					REFERENCES regions(regions_id);
 					
-				
+create table promotions( promotions_id Number(30),	
+			headphones_id Number(30),
+			price Number(10, 2),
+			start_date date,
+			end_date date,
+			constraint promotions_pk_p_id PRIMARY KEY (promotions_id),
+			constraint promotions_fk_h_id FOREIGN KEY (headphones_id) 
+					REFERENCES headphones(headphones_id));
+					
+		
