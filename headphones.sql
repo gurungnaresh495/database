@@ -17,7 +17,9 @@ DROP TABLE employee_pos CASCADE CONSTRAINTS;
 DROP TABLE branches CASCADE CONSTRAINTS;    
 DROP TABLE address CASCADE CONSTRAINTS;
 
---Create address table
+--------------------------------------------------------
+--  DDL for Table BRAND_PRICE
+--------------------------------------------------------
   CREATE TABLE ADDRESS
    ("ADDRESS_ID" NUMBER(30,0) NOT NULL, 
 	"STREET" VARCHAR2(80 BYTE), 
@@ -101,6 +103,11 @@ insert into branches   values (27, 'Yambee', '529-283-6861');
 insert into branches   values (28, 'Devshare', '673-671-2305');
 insert into branches values (29, 'Kamba', '766-454-0130');
 insert into branches values (30, 'Zazio', '126-892-3321');
+
+
+--------------------------------------------------------
+--  DDL for Table Branch_address
+--------------------------------------------------------
 
 CREATE TABLE branch_address(br_ad_id NUMBER(30) NOT NULL,
             address_type VARCHAR2(30),
@@ -233,7 +240,9 @@ insert into BRANDS     values (28, 'Wikivu');
 insert into BRANDS     values (29, 'Eamia');
 insert into BRANDS     values (30, 'Ooba');
 
-
+--------------------------------------------------------
+--  DDL for Table Brand_address
+--------------------------------------------------------
    
 CREATE TABLE brand_address(b_ad_id NUMBER(30) NOT NULL,
             address_type VARCHAR2(30),
@@ -323,6 +332,9 @@ insert into brand_price   values (28, 16, 14, 28.76, '06/12/2018', '15/04/2019')
 insert into brand_price   values (29, 14, 15, 31.13, '23/08/2019', '25/08/2019');
 insert into brand_price   values (30, 15, 13, 28.69, '12/09/2019', '17/04/2019');
 
+--------------------------------------------------------
+--  DDL for Table headphones_BRAND
+--------------------------------------------------------
 
 CREATE TABLE headphones_BRAND  (headphones_b_id NUMBER(30) NOT NULL,
             BRANDS_id NUMBER(30),
@@ -366,6 +378,9 @@ insert into headphones_brand   values (28, 14, 13, '21/09/2019', '07/11/2018', '
 insert into headphones_brand   values (29, 14, 15, '22/08/2019', '02/04/2019', '09/10/2018', 52);
 insert into headphones_brand   values (30, 15, 14, '15/11/2018', '24/05/2019', '29/08/2019', 50);
 
+--------------------------------------------------------
+--  DDL for Table customers
+--------------------------------------------------------
 
 CREATE TABLE customers (customer_id NUMBER(30) NOT NULL,
             customer_lname VARCHAR2(30),
@@ -426,6 +441,9 @@ insert into customers   values (48, 'Sugden', 'Mikol', '753-405-4553', 15);
 insert into customers   values (49, 'Lachaize', 'Bruno', '712-546-3420', 16);
 insert into customers   values (50, 'Arnowicz', 'Celesta', '412-602-0535', 16);
 
+--------------------------------------------------------
+--  DDL for Table customer_address
+--------------------------------------------------------
 
 CREATE TABLE customer_address(c_address_id NUMBER(30) NOT NULL,
             address_type VARCHAR2(30),
@@ -481,7 +499,9 @@ insert into employee_pos   values (6, 'customer_service');
 insert into employee_pos   values (7, 'marketing');
 insert into employee_pos   values (8, 'finance');
 
-
+--------------------------------------------------------
+--  DDL for Table employees
+--------------------------------------------------------
 
 CREATE TABLE employees (employees_id NUMBER(30) NOT NULL,
             employees_lname VARCHAR2(30),
@@ -492,37 +512,40 @@ CREATE TABLE employees (employees_id NUMBER(30) NOT NULL,
             CONSTRAINT employess_fk_b_id FOREIGN KEY (branches_id) REFERENCES branches(br_id),
             CONSTRAINT employess_fk_e_p_id FOREIGN KEY (employee_p_id) REFERENCES employee_pos(employee_p_id));
 
-insert into employees   values (1, 'Varnals', 'Rowan', 15, 15);
-insert into employees   values (2, 'Van der Kruijs', 'Cherilyn', 16, 15);
-insert into employees   values (3, 'Tombling', 'Betta', 16, 15);
-insert into employees   values (4, 'Coopman', 'Kevan', 17, 14);
-insert into employees   values (5, 'Gavaran', 'Christal', 15, 15);
-insert into employees   values (6, 'Buy'), 'Janina', 16, 14);
-insert into employees   values (7, 'Fulloway'), 'Karena', 16, 16);
-insert into employees   values (8, 'Kupisz', 'Zuzana', 15, 16);
-insert into employees   values (9, 'Guilayn', 'Alick', 17, 14);
-insert into employees   values (10, 'Braffington', 'Sergio', 16, 17);
-insert into employees   values (11, 'St. Paul', 'Karena', 15, 15);
-insert into employees   values (12, 'Richards', 'Alie', 17, 16);
-insert into employees   values (13, 'Stapells', 'Rosemaria', 14, 14);
-insert into employees   values (14, 'Emburey'), 'Lyn', 14, 15);
-insert into employees   values (15, 'Waszczyk', 'Nevil', 17, 14);
-insert into employees   values (16, 'Scholtis', 'Allina', 16, 16);
-insert into employees   values (17, 'Wigfield', 'Vitoria', 16, 15);
-insert into employees   values (18, 'McKinnell', 'Carie', 15, 13);
-insert into employees   values (19, 'Ponton', 'Gard', 15, 14);
-insert into employees   values (20, 'Tungay'), 'Latrena', 15, 14);
-insert into employees   values (21, 'Iddiens', 'Les', 16, 15);
-insert into employees   values (22, 'Couvert', 'Nellie', 16, 14);
-insert into employees   values (23, 'Ollet', 'D''arcy'), 15, 15);
-insert into employees   values (24, 'Farnworth', 'Lebbie', 14, 15);
-insert into employees   values (25, 'Been', 'Rebbecca', 16, 15);
-insert into employees   values (26, 'Gull', 'Silvanus', 16, 15);
-insert into employees   values (27, 'Segar', 'Dominique', 16, 15);
-insert into employees   values (28, 'Lehon', 'Zackariah', 14, 14);
-insert into employees   values (29, 'Spaice', 'Jonas', 15, 15);
-insert into employees   values (30, 'Fawlks', 'Corby'), 17, 13);
+insert into employees   values (1, 'Varnals', 'Rowan', 15, 1);
+insert into employees   values (2, 'Van der Kruijs', 'Cherilyn', 16, 5);
+insert into employees   values (3, 'Tombling', 'Betta', 16, 3);
+insert into employees   values (4, 'Coopman', 'Kevan', 17, 6);
+insert into employees   values (5, 'Gavaran', 'Christal', 15, 8);
+insert into employees   values (6, 'Buy'), 'Janina', 16, 8);
+insert into employees   values (7, 'Fulloway'), 'Karena', 16, 6);
+insert into employees   values (8, 'Kupisz', 'Zuzana', 15, 6);
+insert into employees   values (9, 'Guilayn', 'Alick', 17, 4);
+insert into employees   values (10, 'Braffington', 'Sergio', 16, 7);
+insert into employees   values (11, 'St. Paul', 'Karena', 15, 5);
+insert into employees   values (12, 'Richards', 'Alie', 17, 6);
+insert into employees   values (13, 'Stapells', 'Rosemaria', 14, 3);
+insert into employees   values (14, 'Emburey'), 'Lyn', 14, 2);
+insert into employees   values (15, 'Waszczyk', 'Nevil', 17, 3);
+insert into employees   values (16, 'Scholtis', 'Allina', 16, 3);
+insert into employees   values (17, 'Wigfield', 'Vitoria', 16, 8);
+insert into employees   values (18, 'McKinnell', 'Carie', 15, 1);
+insert into employees   values (19, 'Ponton', 'Gard', 15, 3);
+insert into employees   values (20, 'Tungay'), 'Latrena', 15, 8);
+insert into employees   values (21, 'Iddiens', 'Les', 16, 5);
+insert into employees   values (22, 'Couvert', 'Nellie', 16, 4);
+insert into employees   values (23, 'Ollet', 'D''arcy'), 15, 8);
+insert into employees   values (24, 'Farnworth', 'Lebbie', 14, 5);
+insert into employees   values (25, 'Been', 'Rebbecca', 16, 7);
+insert into employees   values (26, 'Gull', 'Silvanus', 16, 8);
+insert into employees   values (27, 'Segar', 'Dominique', 16, 2);
+insert into employees   values (28, 'Lehon', 'Zackariah', 14, 1);
+insert into employees   values (29, 'Spaice', 'Jonas', 15, 2);
+insert into employees   values (30, 'Fawlks', 'Corby'), 17, 8);
 
+--------------------------------------------------------
+--  DDL for Table employee_address
+--------------------------------------------------------
 
 CREATE TABLE employee_address(e_address_id NUMBER(30) NOT NULL,
             address_type VARCHAR2(30),
@@ -565,6 +588,9 @@ insert into employee_address   values (28, null, '11/03/2019', '10/01/2019', 15,
 insert into employee_address   values (29, null, '04/02/2019', '29/10/2018', 15, 15);
 insert into employee_address   values (30, null, '29/03/2019', '02/09/2019', 16, 13);
 
+--------------------------------------------------------
+--  DDL for Table order_placed
+--------------------------------------------------------
 
 CREATE TABLE order_placed (orders_id NUMBER(30) Not Null,
             order_date DATE,
@@ -781,6 +807,9 @@ insert into order_placed   values (198, '16/12/2018', '15/08/2019', 'Lincoln', 1
 insert into order_placed   values (199, '15/02/2019', '30/03/2019', 'Volkswagen', 14.13, 29.9, 26, 16, 15);
 insert into order_placed   values (200, '30/03/2019', '10/03/2019', 'Ford', 14.59, 29.6, 26, 16, 15);
 
+--------------------------------------------------------
+--  DDL for Table orderlines
+--------------------------------------------------------
             
 CREATE TABLE orderlines (orderline_id NUMBER(30) NOT NULL,
             headphones_id NUMBER(30),
@@ -1041,6 +1070,9 @@ insert into orderlines   values (248, 14, 99, 300);
 insert into orderlines   values (249, 17, 100, 298);
 insert into orderlines   values (250, 15, 99, 301);
 
+--------------------------------------------------------
+--  DDL for Table return_prod
+--------------------------------------------------------
 
 CREATE TABLE return_prod (return_id NUMBER(30) NOT NULL,
             orderline_id NUMBER(30),
@@ -1076,6 +1108,10 @@ insert into return_prod   values (22, 99, 35, '21/10/2018', 301);
 insert into return_prod   values (23, 99, 35, '26/07/2019', 299);
 insert into return_prod   values (24, 99, 38, '13/07/2019', 300);
 insert into return_prod   values (25, 101, 34, '05/08/2019', 301);
+
+--------------------------------------------------------
+--  DDL for Table emp_salary
+--------------------------------------------------------
 
 CREATE TABLE   emp_salary (position_id NUMBER(30),
             branch_size VARCHAR2(10),
@@ -1379,11 +1415,51 @@ alter table address add check (state IN  ('AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'C
 create table regions (regions_id Number(30),
 					region_name Varchar2(50),
 					Constraint regions_pk_r_id PRIMARY KEY (regions_id));
-					
+Insert into regions values ( 1, 'Southwestern');
+Insert into regions values (2, 'Southern');
+Insert into regions values (3, 'Midwestern');
+Insert into regions values (4, 'Southwestern');
+Insert into regions values (5, 'Northeastern');
+
+
+
 alter table address add regions_id NUMBER(30);
 alter table address add constraint address_fk_r_id FOREIGN KEy (REGIONS_ID)
 					REFERENCES regions(regions_id);
-					
+
+update address set regions_id = 	3	 where address_id =  	1	;
+update address set regions_id = 	2	 where address_id =  	2	;
+update address set regions_id = 	3	 where address_id =  	3	;
+update address set regions_id = 	5	 where address_id =  	4	;
+update address set regions_id = 	2	 where address_id =  	5	;
+update address set regions_id = 	1	 where address_id =  	6	;
+update address set regions_id = 	3	 where address_id =  	7	;
+update address set regions_id = 	3	 where address_id =  	8	;
+update address set regions_id = 	4	 where address_id =  	9	;
+update address set regions_id = 	3	 where address_id =  	10	;
+update address set regions_id = 	1	 where address_id =  	11	;
+update address set regions_id = 	4	 where address_id =  	12	;
+update address set regions_id = 	4	 where address_id =  	13	;
+update address set regions_id = 	1	 where address_id =  	14	;
+update address set regions_id = 	5	 where address_id =  	15	;
+update address set regions_id = 	5	 where address_id =  	16	;
+update address set regions_id = 	5	 where address_id =  	17	;
+update address set regions_id = 	2	 where address_id =  	18	;
+update address set regions_id = 	5	 where address_id =  	19	;
+update address set regions_id = 	1	 where address_id =  	20	;
+update address set regions_id = 	3	 where address_id =  	21	;
+update address set regions_id = 	2	 where address_id =  	22	;
+update address set regions_id = 	3	 where address_id =  	23	;
+update address set regions_id = 	3	 where address_id =  	24	;
+update address set regions_id = 	5	 where address_id =  	25	;
+update address set regions_id = 	5	 where address_id =  	26	;
+update address set regions_id = 	1	 where address_id =  	27	;
+update address set regions_id = 	4	 where address_id =  	28	;
+update address set regions_id = 	5	 where address_id =  	29	;
+update address set regions_id = 	1	 where address_id =  	30	;
+
+
+
 create table promotions( promotions_id Number(30),	
 			headphones_id Number(30),
 			price Number(10, 2),
@@ -1393,4 +1469,7 @@ create table promotions( promotions_id Number(30),
 			constraint promotions_fk_h_id FOREIGN KEY (headphones_id) 
 					REFERENCES headphones(headphones_id));
 					
-		
+
+
+
+
